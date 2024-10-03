@@ -7,4 +7,3 @@ export default function initializeRooms() {
     new ClassRoom(34),
   ];
 }
-

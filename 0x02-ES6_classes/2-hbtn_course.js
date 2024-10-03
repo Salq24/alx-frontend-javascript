@@ -7,6 +7,7 @@ export default class HolbertonCourse {
     } else if (!Array.isArray(students)) {
       throw new TypeError('Students must be an array of strings');
     }
+
     this._name = name;
     this._length = length;
     this._students = students;
@@ -15,12 +16,15 @@ export default class HolbertonCourse {
   get name() {
     return this._name;
   }
+
   get length() {
     return this._length;
   }
+
   get students() {
     return this._students;
   }
+
   set name(name) {
     if (typeof name !== 'string') {
       throw new TypeError('Name must be a string');
